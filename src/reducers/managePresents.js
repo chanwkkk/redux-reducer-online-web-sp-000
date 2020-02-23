@@ -1,6 +1,7 @@
 export function managePresents(state, action){
   switch(action.type){
-    case "INCREASE"
-  }
-  default: return state
+    case "INCREASE":
+      return {state: state.numberOfPresents+1}
+    default: return state
+  }  
 }
